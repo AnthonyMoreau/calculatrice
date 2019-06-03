@@ -120,4 +120,3 @@ let interval = setInterval(function(){
 
 }, 1000/24)    
 
-debugger
