@@ -63,6 +63,12 @@ let interval = setInterval(function(){
 
     firstSoustraction = Number.parseInt($divFirstSoustraction.value)
     secondSoustraction = Number.parseInt($divSecondSoustraction.value)
+
+    firstDivision = Number.parseInt ($divFirstDivision.value)
+    secondDivision = Number.parseInt ($divSecondDivision.value)
+
+    firstMultiplication = Number.parseInt ($divFirstMultiplication.value)
+    secondMultiplication = Number.parseInt ($divSecondMultiplication.value)
     
 
      if(isNaN(firstAddition) === true){
@@ -80,7 +86,23 @@ let interval = setInterval(function(){
      if(isNaN(secondSoustraction) === true){
 
         secondSoustraction = 0 
-     }  
+     }
+     if(isNaN(firstDivision) === true){
+
+        firstDivision = 0 
+     }   
+     if(isNaN(secondDivision) === true){
+
+        secondDivision = 0 
+     }
+     if(isNaN(firstMultiplication) === true){
+
+        firstMultiplication = 0 
+     }   
+     if(isNaN(secondMultiplication) === true){
+
+        secondMultiplication = 0 
+     }
     
 
 
@@ -92,6 +114,8 @@ let interval = setInterval(function(){
     
         $resultAddition.value = calcul(firstAddition, secondAddition, "+")
         $resultSoustraction.value = calcul(firstSoustraction, secondSoustraction, "-")
+        $resultDivision.value = calcul(firstDivision, secondDivision, "/")
+        $resultMultiplication.value = calcul(firstMultiplication, secondMultiplication, "*")
     })    
 
 }, 1000/24)    
