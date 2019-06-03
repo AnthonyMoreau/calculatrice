@@ -55,7 +55,8 @@ let calcul = function(a, b, operateur){
     return result
 }    
 
-// retourne le resulta
+
+// retourne le résultat
 let interval = setInterval(function(){
 
     firstAddition = Number.parseInt($divFirstAddition.value)
@@ -104,11 +105,6 @@ let interval = setInterval(function(){
         secondMultiplication = 0 
      }
     
-
-
-
-
-
 
     $results.click(function(){
     
